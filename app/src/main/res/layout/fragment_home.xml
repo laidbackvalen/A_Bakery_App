@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+
+    <TextView
+        android:id="@+id/textViewHomePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/home"
+        android:padding="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:src="@drawable/cart"
+        android:padding="4dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/cart"
+        app:layout_constraintEnd_toStartOf="@id/imgMenu"
+        app:layout_constraintTop_toTopOf="@id/textViewHomePage"
+        app:layout_constraintBottom_toBottomOf="@id/textViewHomePage"/>
+
+    <ImageView
+        android:id="@+id/imgMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:src="@drawable/ic_menu"
+        android:padding="4dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/cart"
+        app:layout_constraintEnd_toEndOf="@id/textViewHomePage"
+        app:layout_constraintTop_toTopOf="@id/textViewHomePage"
+        app:layout_constraintBottom_toBottomOf="@id/textViewHomePage"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/nightTitle"
+        app:layout_constraintStart_toStartOf="@id/textViewHomePage"
+        app:layout_constraintEnd_toEndOf="@id/textViewHomePage"
+        app:layout_constraintBottom_toBottomOf="@id/textViewHomePage"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:nestedScrollingEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/textViewHomePage"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:layout_margin="6dp"
+                android:elevation="4dp"
+                android:id="@+id/slideViewPager2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeLayoutProduct"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@id/slideViewPager2"
+                app:layout_constraintBottom_toBottomOf="parent">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:nestedScrollingEnabled="false"
+                    android:padding="10dp" />
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

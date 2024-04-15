@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imgFirstLine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_shape"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="250dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toStartOf="@id/imgSecondLine"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgSecondLine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_shape"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/app_name"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintEnd_toStartOf="@id/imgThirdLine"
+        app:layout_constraintStart_toEndOf="@id/imgFirstLine"/>
+
+    <ImageView
+        android:id="@+id/imgThirdLine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_shape"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="150dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toStartOf="@id/imgFourLine"
+        app:layout_constraintStart_toEndOf="@id/imgSecondLine"/>
+
+    <ImageView
+        android:id="@+id/imgFourLine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_shape"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="100dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toStartOf="@id/imgFiveLine"
+        app:layout_constraintStart_toEndOf="@id/imgThirdLine"/>
+
+    <ImageView
+        android:id="@+id/imgFiveLine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_shape"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toEndOf="@id/imgFourLine"
+        app:layout_constraintEnd_toStartOf="@id/imgSixLine"/>
+
+    <ImageView
+        android:id="@+id/imgSixLine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_shape"
+        android:layout_marginStart="5dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toEndOf="@id/imgFiveLine"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primaryColor">#FF624F82</color>
+    <color name="primaryVariant">#FF3F3B6C</color>
+
+    <!--    night theme-->
+    <color name="nightSubtitle">#FF706F6F</color>
+    <color name="nightTitle">#FF9E9E9E</color>
+    <color name="nightDes">#FF4E4E4E</color>
+
+    <!--    day theme-->
+    <color name="title">#FF4E4E4E</color>
+    <color name="subtitle">#FF706F6F</color>
+    <color name="des">#FF706F6F</color>
+    <color name="red">#FFEF5350</color>
+    <color name="yellow">#FFFFB74D</color>
+    <color name="orange">#FF7043</color>
+    <color name="blue">#FF4FC3F7</color>
+    <color name="green">#FF81C784</color>
+    <color name="pink">#FFF06292</color>
+    <color name="yellowLight">#FFFFF176</color>
+
+
+    <color name="purple_200">#9F73AB</color>
+    <color name="purple_500">#624F82</color>
+    <color name="purple_700">#3F3B6C</color>
+    <color name="teal_200">#624F82</color>
+    <color name="teal_700">#3F3B6C</color>
+    <color name="accent">#A3C7D6</color>
+    <color name="hintColor">#CCCCCC</color>
+    <color name="lightBlue">#00BCD4</color>
+    <color name="lightGreen">#8BC34A</color>
+</resources>

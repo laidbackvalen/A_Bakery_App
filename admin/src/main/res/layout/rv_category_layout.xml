@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textViewCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/quantity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imgEditCategory"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imgEditCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_edit"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:padding="10dp"
+        android:contentDescription="@string/quantity"
+        app:layout_constraintEnd_toStartOf="@id/imgDeleteCategory"
+        app:layout_constraintTop_toTopOf="@id/textViewCategory"
+        app:layout_constraintBottom_toBottomOf="@id/textViewCategory"/>
+
+    <ImageView
+        android:id="@+id/imgDeleteCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:padding="10dp"
+        android:contentDescription="@string/quantity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewCategory"
+        app:layout_constraintBottom_toBottomOf="@id/textViewCategory"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

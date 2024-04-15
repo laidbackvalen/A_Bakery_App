@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryVariant"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/viewProfile"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/primaryVariant"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/viewIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_circle"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewFirstChar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        android:textAllCaps="true"
+        android:background="@color/primaryColor"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="@id/viewIcon"
+        app:layout_constraintEnd_toEndOf="@id/viewIcon"
+        app:layout_constraintTop_toTopOf="@id/viewIcon"
+        app:layout_constraintBottom_toBottomOf="@id/viewIcon"/>
+
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        android:text="@string/profile"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@id/viewProfile"
+        app:layout_constraintEnd_toEndOf="@id/viewProfile"
+        app:layout_constraintTop_toBottomOf="@id/viewIcon" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        android:text="@string/email_address"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:background="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="@id/viewProfile"
+        app:layout_constraintEnd_toEndOf="@id/viewProfile"
+        app:layout_constraintTop_toBottomOf="@id/textViewUserName" />
+
+
+
+    <TextView
+        android:id="@+id/textHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/home"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toBottomOf="@id/viewProfile"/>
+
+    <TextView
+        android:id="@+id/textProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/products"
+        android:textColor="@color/white"
+        android:background="@color/primaryVariant"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toBottomOf="@id/textHome"/>
+
+    <TextView
+        android:id="@+id/textOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/orders"
+        android:textColor="@color/white"
+        android:background="@color/primaryVariant"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toBottomOf="@id/textProduct"/>
+
+    <TextView
+        android:id="@+id/textPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/payment"
+        android:textColor="@color/white"
+        android:background="@color/primaryVariant"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toBottomOf="@id/textOrder"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

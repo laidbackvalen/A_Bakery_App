@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activities.products.ProductDetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/productImages"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:src="@drawable/logo"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/product"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtProduct_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/product"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/productImages"/>
+
+        <TextView
+            android:id="@+id/txtSlogan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/product"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/nightDes"
+            style="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintStart_toStartOf="@id/txtProduct_name"
+            app:layout_constraintEnd_toEndOf="@id/txtProduct_name"
+            app:layout_constraintTop_toBottomOf="@id/txtProduct_name"/>
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textColor="@color/black"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/txtProduct_name"
+            app:layout_constraintEnd_toEndOf="@id/txtProduct_name"
+            app:layout_constraintTop_toBottomOf="@id/txtSlogan"/>
+
+        <TextView
+            android:id="@+id/txtMax"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/max_price"
+            android:textColor="#D84315"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/txtProduct_name"
+            app:layout_constraintTop_toBottomOf="@id/txtPrice"/>
+
+        <TextView
+            android:id="@+id/txtMaxPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/max_price"
+            android:textColor="#D84315"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:textStyle="bold"
+            android:layout_marginStart="05dp"
+            app:layout_constraintStart_toEndOf="@id/txtMax"
+            app:layout_constraintEnd_toEndOf="@id/txtProduct_name"
+            app:layout_constraintTop_toBottomOf="@id/txtPrice"/>
+
+        <TextView
+            android:id="@+id/txtDiscount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/discount_price"
+            android:textColor="#EF6C00"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintStart_toStartOf="@id/txtProduct_name"
+            app:layout_constraintTop_toBottomOf="@id/txtMaxPrice" />
+
+        <TextView
+            android:id="@+id/txtDiscountPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/discount_price"
+            android:textColor="#EF6C00"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:textStyle="bold"
+            android:layout_marginStart="05dp"
+            app:layout_constraintStart_toEndOf="@id/txtDiscount"
+            app:layout_constraintEnd_toEndOf="@id/txtProduct_name"
+            app:layout_constraintTop_toTopOf="@id/txtDiscount"
+            app:layout_constraintBottom_toBottomOf="@id/txtDiscount"/>
+
+        <RatingBar
+            android:id="@+id/ratingBarProduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxWidth="30dp"
+            android:maxHeight="48dp"
+            android:background="@color/white"
+            android:numStars="5"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:isIndicator="true"
+            android:progressTint="#F9A825"
+            android:progressBackgroundTint="@color/des"
+            app:layout_constraintStart_toStartOf="@id/txtDiscount"
+            app:layout_constraintTop_toBottomOf="@id/txtDiscount" />
+
+        <View
+            android:id="@+id/viewRatingLines"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/des"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/ratingBarProduct"/>
+
+        <TextView
+            android:id="@+id/textDescriptions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            app:layout_constraintStart_toStartOf="@id/txtDiscount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/viewRatingLines"/>
+
+        <TextView
+            android:id="@+id/textDescriptionsValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textColor="@color/des"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintStart_toStartOf="@id/textDescriptions"
+            app:layout_constraintEnd_toEndOf="@id/textDescriptions"
+            app:layout_constraintTop_toBottomOf="@id/textDescriptions"/>
+
+        <View
+            android:id="@+id/viewDescription"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/des"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/textDescriptionsValue"/>
+
+        <TextView
+            android:id="@+id/textViewReview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/review"
+            android:padding="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            app:layout_constraintTop_toBottomOf="@id/viewDescription"
+            app:layout_constraintStart_toStartOf="@id/textDescriptions"
+            app:layout_constraintEnd_toEndOf="@id/textDescriptions"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewReview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:nestedScrollingEnabled="true"
+            tools:listitem="@layout/user_review"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@id/textViewReview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

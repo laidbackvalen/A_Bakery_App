@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "909431046794",
+    "firebase_url": "https://the-baking-break-2-default-rtdb.firebaseio.com",
+    "project_id": "the-baking-break-2",
+    "storage_bucket": "the-baking-break-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909431046794:android:116397f2b53db73ce12373",
+        "android_client_info": {
+          "package_name": "com.thebakingbreak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909431046794-3lkh5j3eai6jijodtnrt8t0jqq8v8rfm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thebakingbreak",
+            "certificate_hash": "ed0b90ad15f5fbdd665343a6295e1a37d9d75ad5"
+          }
+        },
+        {
+          "client_id": "909431046794-ihmos65c2mu59f3can59vab9m5rpjt13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjWAyD0m6lfn3MSfju4k6IhHtU3eVef3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909431046794-ihmos65c2mu59f3can59vab9m5rpjt13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909431046794:android:41e19fa3a1e31dbae12373",
+        "android_client_info": {
+          "package_name": "com.thebakingbreak.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909431046794-q2on46f7482purvg7rbbjaqlqfqi6s7q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thebakingbreak.admin",
+            "certificate_hash": "ed0b90ad15f5fbdd665343a6295e1a37d9d75ad5"
+          }
+        },
+        {
+          "client_id": "909431046794-ihmos65c2mu59f3can59vab9m5rpjt13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjWAyD0m6lfn3MSfju4k6IhHtU3eVef3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909431046794-ihmos65c2mu59f3can59vab9m5rpjt13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909431046794:android:d3b3dfa9953fafc4e12373",
+        "android_client_info": {
+          "package_name": "thebakingbreak.seller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909431046794-44mbh4qgdo0tmcbmjhu2ravou3hhf77p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "thebakingbreak.seller",
+            "certificate_hash": "ed0b90ad15f5fbdd665343a6295e1a37d9d75ad5"
+          }
+        },
+        {
+          "client_id": "909431046794-ihmos65c2mu59f3can59vab9m5rpjt13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjWAyD0m6lfn3MSfju4k6IhHtU3eVef3I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909431046794-ihmos65c2mu59f3can59vab9m5rpjt13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

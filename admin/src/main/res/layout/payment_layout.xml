@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textViewProductName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/product_name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewPaymentId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/transaction_id"
+        app:layout_constraintHorizontal_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toBottomOf="@id/textViewProductName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textViewPaymentIdValue"/>
+
+    <TextView
+        android:id="@+id/textViewPaymentIdValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/transaction_id"
+        app:layout_constraintHorizontal_weight="1.5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toTopOf="@id/textViewPaymentId"
+        app:layout_constraintStart_toEndOf="@id/textViewPaymentId"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewPaymentAmt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/total_amount"
+        app:layout_constraintHorizontal_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toBottomOf="@id/textViewPaymentId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textViewPaymentAmtValue"/>
+
+    <TextView
+        android:id="@+id/textViewPaymentAmtValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/transaction_id"
+        app:layout_constraintHorizontal_weight="1.5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toTopOf="@id/textViewPaymentAmt"
+        app:layout_constraintStart_toEndOf="@id/textViewPaymentAmt"
+        app:layout_constraintEnd_toEndOf="@id/textViewPaymentIdValue"/>
+
+    <TextView
+        android:id="@+id/textViewPaymentStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_status"
+        app:layout_constraintHorizontal_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toBottomOf="@id/textViewPaymentAmt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textViewPaymentStatusValue"/>
+
+    <TextView
+        android:id="@+id/textViewPaymentStatusValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/transaction_id"
+        app:layout_constraintHorizontal_weight="1.5"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toTopOf="@id/textViewPaymentStatus"
+        app:layout_constraintStart_toEndOf="@id/textViewPaymentStatus"
+        app:layout_constraintEnd_toEndOf="@id/textViewPaymentIdValue"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

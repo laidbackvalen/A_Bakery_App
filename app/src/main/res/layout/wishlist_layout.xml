@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="7dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgProductWishlist"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtProductNameWishlist"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/product"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/txtProductDesWishlist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgProductWishlist"
+            app:layout_constraintTop_toTopOf="@id/imgProductWishlist"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/txtProductDesWishlist"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/product"
+            android:textColor="@color/nightDes"
+            app:layout_constraintBottom_toTopOf="@id/txtProductPriceWishlist"
+            app:layout_constraintEnd_toEndOf="@id/txtProductNameWishlist"
+            app:layout_constraintStart_toStartOf="@id/txtProductNameWishlist"
+            app:layout_constraintTop_toBottomOf="@id/txtProductNameWishlist" />
+
+        <TextView
+            android:id="@+id/txtProductPriceWishlist"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/Price"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/txtMax"
+            app:layout_constraintEnd_toEndOf="@id/txtProductNameWishlist"
+            app:layout_constraintStart_toStartOf="@id/txtProductNameWishlist"
+            app:layout_constraintTop_toBottomOf="@id/txtProductDesWishlist" />
+
+
+        <TextView
+            android:id="@+id/txtMax"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/max_price"
+            android:textColor="#D84315"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/txtDiscount"
+            app:layout_constraintStart_toStartOf="@id/txtProductNameWishlist"
+            app:layout_constraintTop_toBottomOf="@id/txtProductPriceWishlist" />
+
+        <TextView
+            android:id="@+id/txtMaxPriceWishlist"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="05dp"
+            android:text="@string/max_price"
+            android:textColor="#D84315"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/txtMax"
+            app:layout_constraintEnd_toEndOf="@id/txtProductNameWishlist"
+            app:layout_constraintStart_toEndOf="@id/txtMax"
+            app:layout_constraintTop_toTopOf="@id/txtMax" />
+
+        <TextView
+            android:id="@+id/txtDiscount"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/discount_price"
+            android:textColor="#EF6C00"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/txtProductNameWishlist"
+            app:layout_constraintTop_toBottomOf="@id/txtMaxPriceWishlist"
+            />
+
+        <TextView
+            android:id="@+id/txtDiscountPriceWishlist"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="05dp"
+            android:text="@string/discount_price"
+            android:textColor="#EF6C00"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/txtDiscount"
+            app:layout_constraintEnd_toEndOf="@id/txtProductNameWishlist"
+            app:layout_constraintStart_toEndOf="@id/txtDiscount"
+            app:layout_constraintTop_toTopOf="@id/txtDiscount" />
+
+        <TextView
+            android:id="@+id/txtRemove"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/remove"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            app:layout_constraintEnd_toEndOf="@id/txtProductNameWishlist"
+            app:layout_constraintTop_toBottomOf="@id/txtDiscount"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment">
+
+    <TextView
+        android:id="@+id/textViewOrderPage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:padding="12dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/nightTitle"
+        app:layout_constraintStart_toStartOf="@id/textViewOrderPage"
+        app:layout_constraintEnd_toEndOf="@id/textViewOrderPage"
+        app:layout_constraintBottom_toBottomOf="@id/textViewOrderPage"/>
+
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:layout_marginStart="10dp"
+        android:padding="5dp"
+        app:layout_constraintHorizontal_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toBottomOf="@id/textViewOrderPage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textViewNameValue"/>
+
+    <TextView
+        android:id="@+id/textViewNameValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintHorizontal_weight="1.5"
+        app:layout_constraintStart_toEndOf="@id/textViewName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toTopOf="@id/textViewName"
+        app:layout_constraintBottom_toBottomOf="@id/textViewName"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/email_address"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintHorizontal_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toBottomOf="@id/textViewName"
+        app:layout_constraintStart_toStartOf="@id/textViewName"
+        app:layout_constraintEnd_toStartOf="@id/textViewEmailValue"/>
+
+    <TextView
+        android:id="@+id/textViewEmailValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintHorizontal_weight="1.5"
+        app:layout_constraintStart_toEndOf="@id/textViewName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toTopOf="@id/textViewEmail"
+        app:layout_constraintBottom_toBottomOf="@id/textViewEmail"
+        app:layout_constraintEnd_toEndOf="@id/textViewNameValue"/>
+
+    <TextView
+        android:id="@+id/textViewPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_number"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintHorizontal_weight="1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmail"
+        app:layout_constraintStart_toStartOf="@id/textViewName"
+        app:layout_constraintEnd_toStartOf="@id/textViewPhoneValue"/>
+
+    <TextView
+        android:id="@+id/textViewPhoneValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintHorizontal_weight="1.5"
+        app:layout_constraintStart_toEndOf="@id/textViewName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toTopOf="@id/textViewPhone"
+        app:layout_constraintBottom_toBottomOf="@id/textViewPhone"
+        app:layout_constraintEnd_toEndOf="@id/textViewNameValue"/>
+
+    <TextView
+        android:id="@+id/btnAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_bg_drawable"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toBottomOf="@id/textViewPhone"
+        app:layout_constraintStart_toStartOf="@id/textViewPhone"
+        app:layout_constraintEnd_toEndOf="@id/textViewPhoneValue" />
+    
+    <View
+        android:id="@+id/userAddressProfile"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAddress" />
+    <TextView
+        android:id="@+id/textViewAddressName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toTopOf="@id/userAddressProfile"
+        app:layout_constraintStart_toStartOf="@id/userAddressProfile"
+        app:layout_constraintEnd_toEndOf="@id/userAddressProfile" />
+
+    <TextView
+        android:id="@+id/textViewFullAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@id/textViewAddressName"
+        app:layout_constraintStart_toStartOf="@id/userAddressProfile"
+        app:layout_constraintEnd_toEndOf="@id/userAddressProfile"/>
+
+    <TextView
+        android:id="@+id/textViewAddressPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintTop_toBottomOf="@id/textViewFullAddress"
+        app:layout_constraintStart_toStartOf="@id/userAddressProfile"
+        app:layout_constraintEnd_toEndOf="@id/userAddressProfile"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

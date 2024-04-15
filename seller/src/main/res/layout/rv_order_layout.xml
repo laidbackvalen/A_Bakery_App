@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgProductOrder"
+            android:layout_width="180dp"
+            android:layout_height="150dp"
+            android:contentDescription="@string/image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtProductNameOrder"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/product"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/txtProductPriceOrder"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgProductOrder"
+            app:layout_constraintTop_toTopOf="@id/imgProductOrder"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+
+        <TextView
+            android:id="@+id/txtProductPriceOrder"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/price"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/txtProductNameOrder"
+            app:layout_constraintStart_toStartOf="@id/txtProductNameOrder"
+            app:layout_constraintTop_toBottomOf="@id/txtProductNameOrder"
+            app:layout_constraintBottom_toTopOf="@id/txtProductQtyOrder"/>
+
+        <TextView
+            android:id="@+id/txtProductQtyOrder"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/quantities"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/txtProductNameOrder"
+            app:layout_constraintTop_toBottomOf="@id/txtProductPriceOrder"
+            app:layout_constraintBottom_toTopOf="@id/txtProductAmtOrder"/>
+
+        <TextView
+            android:id="@+id/txtProductQtyValueOrder"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/txtProductNameOrder"
+            app:layout_constraintStart_toEndOf="@id/txtProductQtyOrder"
+            app:layout_constraintTop_toBottomOf="@id/txtProductPriceOrder"
+            app:layout_constraintBottom_toBottomOf="@id/txtProductQtyOrder"/>
+
+        <TextView
+            android:id="@+id/txtProductAmtOrder"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/total_amount"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/txtProductNameOrder"
+            app:layout_constraintTop_toBottomOf="@id/txtProductQtyOrder"
+            app:layout_constraintBottom_toTopOf="@id/txtProductPaymentOrder"/>
+
+        <TextView
+            android:id="@+id/txtProductAmtValueOrder"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/primaryColor"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/txtProductNameOrder"
+            app:layout_constraintStart_toEndOf="@id/txtProductAmtOrder"
+            app:layout_constraintTop_toBottomOf="@id/txtProductQtyOrder"
+            app:layout_constraintBottom_toBottomOf="@id/txtProductAmtOrder"/>
+
+        <TextView
+            android:id="@+id/txtProductPaymentOrder"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/payment_status"
+            android:textColor="@color/primaryVariant"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/txtProductNameOrder"
+            app:layout_constraintTop_toBottomOf="@id/txtProductAmtOrder"
+            app:layout_constraintBottom_toBottomOf="@id/imgProductOrder"/>
+
+        <TextView
+            android:id="@+id/txtProductPaymentValueOrder"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/primaryVariant"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/txtProductNameOrder"
+            app:layout_constraintStart_toEndOf="@id/txtProductPaymentOrder"
+            app:layout_constraintTop_toBottomOf="@id/txtProductAmtOrder"
+            app:layout_constraintBottom_toBottomOf="@id/txtProductPaymentOrder"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

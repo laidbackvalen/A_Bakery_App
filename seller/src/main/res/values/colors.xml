@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primaryColor">#FF624F82</color>
+    <color name="primaryVariant">#FF3F3B6C</color>
+
+    <!--    night theme-->
+    <color name="nightSubtitle">#FF706F6F</color>
+    <color name="nightTitle">#FF9E9E9E</color>
+    <color name="nightDes">#FF4E4E4E</color>
+
+    <!--    day theme-->
+    <color name="title">#FF4E4E4E</color>
+    <color name="subtitle">#FF706F6F</color>
+    <color name="des">#FF706F6F</color>
+    <color name="green">#66BB6A</color>
+    <color name="red">#EF5350</color>
+    <color name="orange">#FFA726</color>
+    <color name="yellow">#FFEE58</color>
+    <color name="blue">#FF29B6F6</color>
+</resources>

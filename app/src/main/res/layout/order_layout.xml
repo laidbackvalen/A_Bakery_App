@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="7dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgProductOrder"
+                android:layout_width="180dp"
+                android:layout_height="150dp"
+                android:contentDescription="@string/image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtProduct_name_order"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/product"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/txtProduct_price_order"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgProductOrder"
+                app:layout_constraintTop_toTopOf="@id/imgProductOrder"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+
+            <TextView
+                android:id="@+id/txtProduct_price_order"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/Price"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/txtMax"
+                app:layout_constraintEnd_toEndOf="@id/txtProduct_name_order"
+                app:layout_constraintStart_toStartOf="@id/txtProduct_name_order"
+                app:layout_constraintTop_toBottomOf="@id/txtProduct_name_order" />
+
+
+            <TextView
+                android:id="@+id/txtMax"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/max_price"
+                android:textColor="#D84315"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@id/txtDiscount"
+                app:layout_constraintStart_toStartOf="@id/txtProduct_name_order"
+                app:layout_constraintTop_toBottomOf="@id/txtProduct_price_order" />
+
+            <TextView
+                android:id="@+id/txtMaxPriceOrder"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="05dp"
+                android:text="@string/max_price"
+                android:textColor="#D84315"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/txtMax"
+                app:layout_constraintEnd_toEndOf="@id/txtProduct_name_order"
+                app:layout_constraintStart_toEndOf="@id/txtMax"
+                app:layout_constraintTop_toTopOf="@id/txtMax" />
+
+            <TextView
+                android:id="@+id/txtDiscount"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/discount_price"
+                android:textColor="#EF6C00"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/txtProduct_name_order"
+                app:layout_constraintTop_toBottomOf="@id/txtMaxPriceOrder"
+                app:layout_constraintBottom_toTopOf="@id/txtQuantity"/>
+
+            <TextView
+                android:id="@+id/txtDiscountPriceOrder"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="05dp"
+                android:text="@string/discount_price"
+                android:textColor="#EF6C00"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/txtDiscount"
+                app:layout_constraintEnd_toEndOf="@id/txtProduct_name_order"
+                app:layout_constraintStart_toEndOf="@id/txtDiscount"
+                app:layout_constraintTop_toTopOf="@id/txtDiscount" />
+
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/txtProduct_name_order"
+            app:layout_constraintTop_toBottomOf="@id/txtDiscount"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtQuantityOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/count"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toEndOf="@id/txtQuantity"
+            app:layout_constraintTop_toTopOf="@id/txtQuantity"
+            app:layout_constraintBottom_toBottomOf="@id/txtQuantity"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right"
+            android:tint="@color/black"
+            android:contentDescription="@string/image"
+            android:layout_margin="7dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="UseAppTint" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
